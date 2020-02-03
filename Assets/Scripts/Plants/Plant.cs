@@ -2,7 +2,7 @@
 {
     public string name { get; set; }
 
-    public PlantType plantType { get; }
+    public PlantType plantType;
     public int buyValue { get; set; }
 
     public int sellValue { get; set; }
