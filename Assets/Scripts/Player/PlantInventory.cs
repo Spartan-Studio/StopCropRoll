@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-public class Inventory
+public class PlantInventory
 {
     private IDictionary<string, int> inventory;
 
@@ -10,12 +10,12 @@ public class Inventory
         inventory = new Dictionary<string, int>();
     }
 
-    public int getInventoryAmount(string plantName)
+    public int getPlantAmount(string plantName)
     {
         return inventory[plantName];
     }
 
-    public void addInventortAmount(string plantName, int amount)
+    public void addPlantAmount(string plantName, int amount)
     {
         inventory[plantName] += amount;
     }
