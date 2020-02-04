@@ -5,7 +5,7 @@ public class PlantInventory
 {
     private IDictionary<string, int> inventory;
 
-    public Inventory()
+    public PlantInventory()
     {
         inventory = new Dictionary<string, int>();
     }
