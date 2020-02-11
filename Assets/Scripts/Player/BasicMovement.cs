@@ -45,7 +45,7 @@ public class BasicMovement : MonoBehaviour
         playerHealth = 100;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<AnimCamShake>();
+       // shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<AnimCamShake>();
         playerDamage = 10;
         Cursor.visible = false;
     }
