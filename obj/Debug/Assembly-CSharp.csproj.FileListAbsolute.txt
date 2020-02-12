@@ -1,0 +1,2 @@
+C:\Users\iawil\Desktop\UNITYGAMES\unityprojecy\2D Animation\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\iawil\Desktop\UNITYGAMES\unityprojecy\2D Animation\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
