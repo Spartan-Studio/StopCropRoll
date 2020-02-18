@@ -49,7 +49,7 @@ public class Enemymove : MonoBehaviour
             enemHealth = enemHealth - damageShot;
             Destroy(bullet);
             Instantiate(blood, transform.position, Quaternion.identity);
-            shake.CamShake();
+            //shake.CamShake();
         }
 
         if (enemHealth <= 0)
