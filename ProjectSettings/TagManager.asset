@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - tag
+  - Players
+  - Walls
+  - EnemySmall
+  - Sword
+  - ScreenShake
+  - Bullet
+  - Crop
+  - Enemies
+  - crosshair
+  - PlantCropText
   layers:
   - Default
   - TransparentFX
@@ -40,4 +51,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 3929219815
     locked: 0
