@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa200e484fcd8fd4f9b0ec386de24e8b, type: 3}
+  m_Name: Corn
+  m_EditorClassIdentifier: 
+  name: Corn
+  plantType: 2
+  buyValue: 10
+  sellValue: 5
+  growthRate: 1
+  targetValue: 1
+  hitpoints: 10
+  sprite: {fileID: 21300000, guid: 5a181d7d086107a44a95a640a94c3b8a, type: 3}
