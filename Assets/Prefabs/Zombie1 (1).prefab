@@ -161,6 +161,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -226,22 +227,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2486293148506030702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e6d50e0d3bdb5249aedf0da9b95afed, type: 3}
+  m_Script: {fileID: 11500000, guid: d705317f30ce5ba47ad075cbcd99ef88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2486293148506030703}
-  enemHealth: 6
-  distDetection: 1.21
-  speed: 0.74
-  blood: {fileID: 4086126229173818399, guid: c2d293c263ba9c0419193f356f7fea5b, type: 3}
-  enemHealthBar: {fileID: 2486293150194539689}
-  damageShot: 19.15
-  zombienoises:
-  - {fileID: 8300000, guid: 90054576c036ea44096d20cc89ff4da2, type: 3}
-  - {fileID: 8300000, guid: 4fb45f9472f5e554c82a5a9c7ba4c739, type: 3}
-  - {fileID: 8300000, guid: 8b9826c915109c446be0c38d54721a2d, type: 3}
-  - {fileID: 8300000, guid: 5ce6bb262e363834db2b5cdef8a21155, type: 3}
-  - {fileID: 8300000, guid: 83041cb4dc7766b48a4342db7511819d, type: 3}
+  enemHealth: 0
+  distDetection: 0
+  speed: 0
+  blood: {fileID: 0}
+  enemHealthBar: {fileID: 0}
+  damageShot: 0
+  zombienoises: []
 --- !u!61 &2486293148506030698
 BoxCollider2D:
   m_ObjectHideFlags: 0
