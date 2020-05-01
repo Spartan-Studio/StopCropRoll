@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class PlantCrop : MonoBehaviour {
 
     public Text plantText;
-    private bool selected;
-
+    private bool selected; 
     public PlantContainer plantContainer;
 
     // Start is called before the first frame update
@@ -15,7 +14,9 @@ public class PlantCrop : MonoBehaviour {
         plantText = GameObject.FindGameObjectWithTag ("PlantCropText").GetComponent<Text>();
         plantText.enabled = false;
         this.selected = false;
-        plantContainer = GetComponent<PlantContainer>();
+        plantContainer = GetComponentInChildren<PlantContainer>();
+        Debug.Log("plantContainer is assigned");
+        Debug.Log("plantContainer is disabled");
         //transform.eulerAngles = new Vector3 (0, 0, 50);
     }
 
@@ -44,7 +45,7 @@ public class PlantCrop : MonoBehaviour {
 
     private void plantCrop(Plant plant)
     {
-        plantContainer.plant = plant;
+        plantContainer.Plant(plant);
         Debug.Log("Planted crop: " + plant.ToString());
     }
 }
