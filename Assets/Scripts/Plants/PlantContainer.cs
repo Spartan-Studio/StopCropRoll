@@ -28,4 +28,9 @@ public class PlantContainer : MonoBehaviour
         this.plantObject = plant;
         spriteRenderer.sprite = this.plantObject.sprite;
     }
+
+    public bool hasPlant()
+    {
+        return plantObject != null;
+    }
 }

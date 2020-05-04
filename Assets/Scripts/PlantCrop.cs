@@ -25,12 +25,13 @@ public class PlantCrop : MonoBehaviour {
         if (this.selected && Input.GetKeyDown("e")){
             Debug.Log("E!");
             plantCrop(Resources.Load<Plant>("Corn"));
+            plantText.enabled = false;
             }
         }
     
 
     void OnTriggerEnter2D (Collider2D col) {
-        if (col.gameObject.tag == "Players") {
+        if (col.gameObject.tag == "Players" && !plantContainer.hasPlant()) {
             plantText.enabled = true;
             this.selected = true;
         }
