@@ -120,11 +120,11 @@ GameObject:
   - component: {fileID: 2486293148506030678}
   - component: {fileID: 2486293148506030677}
   - component: {fileID: 2486293148506030676}
-  - component: {fileID: 2486293148506030699}
   - component: {fileID: 2486293148506030698}
   - component: {fileID: 2486293148506030697}
   - component: {fileID: 2486293148506030696}
   - component: {fileID: 2486293148506030703}
+  - component: {fileID: 2109694397}
   m_Layer: 0
   m_Name: Zombie1 (1)
   m_TagString: Enemies
@@ -218,25 +218,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2486293148506030699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2486293148506030702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d705317f30ce5ba47ad075cbcd99ef88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemHealth: 0
-  distDetection: 0
-  speed: 0
-  blood: {fileID: 0}
-  enemHealthBar: {fileID: 0}
-  damageShot: 0
-  zombienoises: []
 --- !u!61 &2486293148506030698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -299,8 +280,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a4366158371c9514cae30cfff454dcb2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -404,6 +385,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2109694397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2486293148506030702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6d50e0d3bdb5249aedf0da9b95afed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2486293148506030703}
+  enemHealth: 7.38
+  distDetection: 1.32
+  speed: 1.71
+  blood: {fileID: 4086126229173818399, guid: c2d293c263ba9c0419193f356f7fea5b, type: 3}
+  enemHealthBar: {fileID: 2486293150194539689}
+  damageShot: 1.33
+  zombienoises:
+  - {fileID: 8300000, guid: 90054576c036ea44096d20cc89ff4da2, type: 3}
+  - {fileID: 8300000, guid: 24b617db03a924c4ab49c13feb18c10d, type: 3}
+  - {fileID: 8300000, guid: a4366158371c9514cae30cfff454dcb2, type: 3}
+  - {fileID: 8300000, guid: e66b136e063cc4049b96679b13228187, type: 3}
+  - {fileID: 8300000, guid: 10732d0c2b844ae4c9ce62eab3a4c9b3, type: 3}
 --- !u!1 &2486293148545118515
 GameObject:
   m_ObjectHideFlags: 0
