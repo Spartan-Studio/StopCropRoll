@@ -22,16 +22,31 @@ public class PlantCrop : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (this.selected && Input.GetKeyDown("e")){
-            Debug.Log("E!");
-            plantCrop(Resources.Load<Plant>("Corn"));
-            plantText.enabled = false;
+        if (this.selected){
+            if (Input.GetKeyDown("e")) {
+                Debug.Log("E!");
+                plantCrop(Resources.Load<Plant>("Corn"));
+                plantText.text = Const.harvestText;
+            }
+            else if (Input.GetKeyDown("q"))
+            {
+                harvestCrop();
+                plantText.text = Const.plantText;
+            }
             }
         }
     
 
     void OnTriggerEnter2D (Collider2D col) {
-        if (col.gameObject.tag == "Players" && !plantContainer.hasPlant()) {
+        if (col.gameObject.tag == "Players") {
+            if (plantContainer.hasPlant())
+            {
+                plantText.text = Const.harvestText;
+            }
+            else
+            {
+                plantText.text = Const.plantText;
+            }
             plantText.enabled = true;
             this.selected = true;
         }
@@ -48,5 +63,10 @@ public class PlantCrop : MonoBehaviour {
     {
         plantContainer.Plant(plant);
         Debug.Log("Planted crop: " + plant.ToString());
+    }
+
+    private Plant harvestCrop()
+    {
+        return plantContainer.Harvest();
     }
 }
