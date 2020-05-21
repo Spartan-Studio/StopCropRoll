@@ -22,7 +22,7 @@ public class PlantCrop : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         if (this.selected){
-            if (Input.GetKeyDown("e")) {
+            if (Input.GetKeyDown("e") && !plantContainer.hasPlant()) {
                 Debug.Log("inventory amount: " + inventory.getPlantAmount(inventory.selectedPlant));
                 if(inventory.getPlantAmount(inventory.selectedPlant) > 0)
                 {
@@ -34,7 +34,7 @@ public class PlantCrop : MonoBehaviour {
                     plantText.text = Const.notEnoughSeeds;
                 }
             }
-            else if (Input.GetKeyDown("q"))
+            else if (Input.GetKeyDown("q") && plantContainer.hasPlant())
             {
                 harvestCrop();
                 plantText.text = Const.plantText;
