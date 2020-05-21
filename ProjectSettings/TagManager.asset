@@ -15,6 +15,7 @@ TagManager:
   - Enemies
   - crosshair
   - PlantCropText
+  - InventoryText
   layers:
   - Default
   - TransparentFX
