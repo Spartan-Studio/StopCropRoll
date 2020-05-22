@@ -362,12 +362,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3528364538509086331}
-  enemHealth: 4.5
+  enemHealth: 18.54
   distDetection: 1.32
   speed: 0.55
   blood: {fileID: 4086126229173818399, guid: c2d293c263ba9c0419193f356f7fea5b, type: 3}
   enemHealthBar: {fileID: 3528364540038140093}
-  damageShot: 4.09
+  damageShot: 0.55
   zombienoises:
   - {fileID: 8300000, guid: 90054576c036ea44096d20cc89ff4da2, type: 3}
   - {fileID: 8300000, guid: 24b617db03a924c4ab49c13feb18c10d, type: 3}

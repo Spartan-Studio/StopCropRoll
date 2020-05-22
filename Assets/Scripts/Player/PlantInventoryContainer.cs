@@ -19,6 +19,6 @@ public class PlantInventoryContainer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        invetoryText.text = "Corn: " + inventory.getPlantAmount(inventory.selectedPlant);
+        invetoryText.text = "Seeds: " + inventory.getPlantAmount(inventory.selectedPlant);
     }
 }
