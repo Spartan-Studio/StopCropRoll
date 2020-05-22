@@ -282,7 +282,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a4366158371c9514cae30cfff454dcb2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.446
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -400,7 +400,7 @@ MonoBehaviour:
   animator: {fileID: 2486293148506030703}
   enemHealth: 1.33
   distDetection: 1.32
-  speed: 0.75
+  speed: 0.6
   blood: {fileID: 4086126229173818399, guid: c2d293c263ba9c0419193f356f7fea5b, type: 3}
   enemHealthBar: {fileID: 2486293150194539689}
   damageShot: 14.96
